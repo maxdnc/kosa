@@ -22,30 +22,25 @@ import Main from "./layout/Main";
 // rrd import
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-const router = createBrowserRouter(
+const router = createBrowserRouter([
   {
-    basename: "/kosa/",
+    path: "/",
+    element: <Main />,
+    children: [
+      { index: true, element: <Acceuil /> },
+      { path: "/about", element: <About /> },
+      {
+        path: "/accodomation/:id",
+        element: <Accodomation />,
+        loader: loaderGalleryDetails,
+      },
+      {
+        path: "*",
+        element: <Error />,
+      },
+    ],
   },
-  [
-    {
-      path: "/",
-      element: <Main />,
-      children: [
-        { index: true, element: <Acceuil />, loader: loaderGallery },
-        { path: "/about", element: <About /> },
-        {
-          path: "/accodomation/:id",
-          element: <Accodomation />,
-          loader: loaderGalleryDetails,
-        },
-        {
-          path: "*",
-          element: <Error />,
-        },
-      ],
-    },
-  ]
-);
+]);
 
 function App() {
   return (
