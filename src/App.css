@@ -64,4 +64,14 @@ button {
   border: none;
   color: inherit;
   background: none;
+  cursor: pointer;
+}
+
+/* DropDown compenent */
+.accordeon-content {
+  background-color: red;
+}
+
+.accordeon-content.active {
+  background-color: blue;
 }
