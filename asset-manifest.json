@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/kosa/static/css/main.0f99968e.css",
-    "main.js": "/kosa/static/js/main.ef27ebac.js",
+    "main.js": "/kosa/static/js/main.194c76e0.js",
     "index.html": "/kosa/index.html",
     "main.0f99968e.css.map": "/kosa/static/css/main.0f99968e.css.map",
-    "main.ef27ebac.js.map": "/kosa/static/js/main.ef27ebac.js.map"
+    "main.194c76e0.js.map": "/kosa/static/js/main.194c76e0.js.map"
   },
   "entrypoints": [
     "static/css/main.0f99968e.css",
-    "static/js/main.ef27ebac.js"
+    "static/js/main.194c76e0.js"
   ]
 }
