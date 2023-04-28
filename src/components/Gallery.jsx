@@ -2,11 +2,15 @@
 
 import { Link } from "react-router-dom";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import data from "../assets/data.json";
 
 const Gallery = () => {
-  const [cards, setCards] = useState(data);
+  const [cards, setCards] = useState([]);
+
+  useEffect(() => {
+    setCards(data);
+  }, []);
 
   return (
     <section className="gallery">
