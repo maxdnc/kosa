@@ -1,0 +1,8 @@
+/* DropDown compenent */
+.dropdown-content {
+  background-color: red;
+}
+
+.dropdown-content.active {
+  background-color: blue;
+}

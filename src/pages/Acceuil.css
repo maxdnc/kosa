@@ -1,0 +1,18 @@
+.banner-acceuil {
+  background: black;
+  height: 111px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px;
+}
+
+.banner-title {
+  position: absolute;
+  top: 50%;
+  left: 4.8%;
+  transform: translatey(-50%);
+  color: white;
+  font-size: 1.5rem;
+  line-height: 100%;
+  font-weight: 500;
+}

@@ -1,6 +1,9 @@
 // import rrd
 import { NavLink, Outlet } from "react-router-dom";
 
+// import style
+import "./Main.css";
+
 const Main = () => {
   return (
     <>

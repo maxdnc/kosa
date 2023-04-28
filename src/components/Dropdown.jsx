@@ -1,4 +1,9 @@
-import React, { useState } from "react";
+// import react
+
+import { useState } from "react";
+
+// import style
+import "./Dropdown.css";
 
 const Dropdown = () => {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -41,16 +46,16 @@ const Dropdown = () => {
         const accordionContentClassName = isActive ? "active" : "";
 
         return (
-          <div className="accordeon" key={index}>
+          <div className="dropdown" key={index}>
             <button
-              className="accordeon-title dropbtn"
+              className="dropdown-title dropbtn"
               onClick={() => onTitleClick(index)}
             >
               <span>{item.title}</span>
               <div>icon drop down</div>
             </button>
-            <div className={`accordeon-content ${accordionContentClassName}`}>
-              <p className="accordeon-text">{item.content}</p>
+            <div className={`dropdown-content ${accordionContentClassName}`}>
+              <p className="dropdown-text">{item.content}</p>
             </div>
           </div>
         );

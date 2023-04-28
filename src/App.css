@@ -53,6 +53,7 @@ ol,
 ul,
 menu {
   list-style: none;
+  padding: 0;
 }
 
 a {
@@ -67,11 +68,7 @@ button {
   cursor: pointer;
 }
 
-/* DropDown compenent */
-.accordeon-content {
-  background-color: red;
-}
-
-.accordeon-content.active {
-  background-color: blue;
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #e5e5e5;
 }
