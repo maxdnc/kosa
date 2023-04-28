@@ -1,13 +1,15 @@
 {
   "files": {
-    "main.css": "/kosa/static/css/main.0f99968e.css",
-    "main.js": "/kosa/static/js/main.194c76e0.js",
+    "main.css": "/kosa/static/css/main.ff95192d.css",
+    "main.js": "/kosa/static/js/main.ab9b1bda.js",
+    "static/media/Mountain.jpg": "/kosa/static/media/Mountain.26bc5f49a63e3e76cbe3.jpg",
+    "static/media/Coast.jpg": "/kosa/static/media/Coast.facdd914f986476abee6.jpg",
     "index.html": "/kosa/index.html",
-    "main.0f99968e.css.map": "/kosa/static/css/main.0f99968e.css.map",
-    "main.194c76e0.js.map": "/kosa/static/js/main.194c76e0.js.map"
+    "main.ff95192d.css.map": "/kosa/static/css/main.ff95192d.css.map",
+    "main.ab9b1bda.js.map": "/kosa/static/js/main.ab9b1bda.js.map"
   },
   "entrypoints": [
-    "static/css/main.0f99968e.css",
-    "static/js/main.194c76e0.js"
+    "static/css/main.ff95192d.css",
+    "static/js/main.ab9b1bda.js"
   ]
 }
