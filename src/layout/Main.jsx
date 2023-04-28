@@ -9,10 +9,10 @@ const Main = () => {
         <nav>
           <ul>
             <li>
-              <NavLink to="/">Acceuil</NavLink>
+              <NavLink to="/kosa/">Acceuil</NavLink>
             </li>
             <li>
-              <NavLink to="/about">A propos</NavLink>
+              <NavLink to="/kosa/about">A propos</NavLink>
             </li>
           </ul>
         </nav>

@@ -13,7 +13,7 @@ const Gallery = () => {
       {cards.map((card, index) => {
         return (
           <Link
-            to={`/accodomation/${card.id}`}
+            to={`/kosa/accodomation/${card.id}`}
             className="gallery-item"
             key={index}
           >

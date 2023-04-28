@@ -21,13 +21,13 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/kosa/",
     element: <Main />,
     children: [
       { index: true, element: <Acceuil /> },
-      { path: "/about", element: <About /> },
+      { path: "/kosa/about", element: <About /> },
       {
-        path: "/accodomation/:id",
+        path: "/kosa/accodomation/:id",
         element: <Accodomation />,
         loader: loaderGalleryDetails,
       },
