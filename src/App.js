@@ -1,9 +1,6 @@
 //style
 import "./App.css";
 
-//data
-import data from "./assets/data";
-
 //pages
 
 import About from "./pages/About";
@@ -14,7 +11,7 @@ import Accodomation from "./pages/Accodomation";
 import Error from "./pages/Error";
 
 // loader
-import { loaderGalleryDetails, loaderGallery } from "./assets/loader";
+import { loaderGalleryDetails } from "./assets/loader";
 
 //layout
 import Main from "./layout/Main";
