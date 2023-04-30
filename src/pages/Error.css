@@ -1,0 +1,28 @@
+.error {
+  color: var(--primary);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 90vh;
+}
+
+.error-404 {
+  font-size: 6.25rem;
+  font-weight: 700;
+  line-height: 142.6%;
+}
+
+.error-text {
+  font-size: 1.125rem;
+  text-align: center;
+  font-weight: 500;
+  max-width: 35ch;
+}
+
+.error-link {
+  text-decoration: underline;
+  font-size: 0.875rem;
+  margin-block: 8rem;
+  font-weight: 500;
+}

@@ -70,5 +70,13 @@ button {
 
 body {
   font-family: "Montserrat", sans-serif;
-  background-color: #e5e5e5;
+  background-color: white;
+  height: 100%;
+}
+
+/* variable */
+
+:root {
+  --primary: #ff6060;
+  --secondary: #f7f7f7;
 }

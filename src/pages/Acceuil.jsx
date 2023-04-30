@@ -16,6 +16,7 @@ const Acceuil = () => {
         image={Coast}
         bannerSize={"banner-acceuil"}
         title={"Chez vous, partout et ailleurs"}
+        alt={"Landscape of fogy coast "}
       />
       <Gallery />
     </>

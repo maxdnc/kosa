@@ -2,8 +2,15 @@
 
 import { Link } from "react-router-dom";
 
+// import react
 import { useEffect, useState } from "react";
+
+// import data
 import data from "../assets/data.json";
+
+// import style
+
+import "./Gallery.css";
 
 const Gallery = () => {
   const [cards, setCards] = useState([]);
@@ -18,7 +25,7 @@ const Gallery = () => {
         return (
           <Link
             to={`/kosa/accodomation/${card.id}`}
-            className="gallery-item"
+            className="gallery-container"
             key={index}
           >
             <img
@@ -26,6 +33,7 @@ const Gallery = () => {
               alt={card.title}
               className="gallery-item-image"
             />
+
             <h2 className="gallery-item-title">{card.title}</h2>
           </Link>
         );
