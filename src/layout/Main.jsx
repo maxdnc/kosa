@@ -9,7 +9,7 @@ const Main = () => {
     <>
       <div className="main-block">
         <header className="main-header">
-          <Link to="/kosa/">
+          <Link to="/">
             <svg
               className="main-logo"
               width="211"
@@ -44,12 +44,12 @@ const Main = () => {
           <nav>
             <ul className="main-list">
               <li>
-                <NavLink className="main-navlink" to="/kosa/">
+                <NavLink className="main-navlink" to="/">
                   Acceuil
                 </NavLink>
               </li>
               <li>
-                <NavLink className="main-navlink" to="/kosa/about">
+                <NavLink className="main-navlink" to="/about">
                   A propos
                 </NavLink>
               </li>

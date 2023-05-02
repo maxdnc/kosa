@@ -17,17 +17,17 @@ import { loaderGalleryDetails } from "./assets/loader";
 import Main from "./layout/Main";
 
 // rrd import
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createHashRouter, RouterProvider } from "react-router-dom";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
-    path: "/kosa/",
+    path: "/",
     element: <Main />,
     children: [
       { index: true, element: <Acceuil /> },
-      { path: "/kosa/about", element: <About /> },
+      { path: "/about", element: <About /> },
       {
-        path: "/kosa/accodomation/:id",
+        path: "/accodomation/:id",
         element: <Accodomation />,
         loader: loaderGalleryDetails,
       },

@@ -24,7 +24,7 @@ const Gallery = () => {
       {cards.map((card, index) => {
         return (
           <Link
-            to={`/kosa/accodomation/${card.id}`}
+            to={`/accodomation/${card.id}`}
             className="gallery-container"
             key={index}
           >

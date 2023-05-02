@@ -10,7 +10,7 @@ const Error = () => {
       <h2 className="error-text">
         Oups! La page que vous demandez n'existe pas.
       </h2>
-      <Link className="error-link" to="/kosa/">
+      <Link className="error-link" to="/">
         Retourner sur la page d’accueil
       </Link>
     </div>
