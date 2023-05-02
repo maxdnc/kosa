@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/kosa/static/css/main.4948f18b.css",
-    "main.js": "/kosa/static/js/main.8aa9bc46.js",
+    "main.css": "/kosa/static/css/main.4c1271a6.css",
+    "main.js": "/kosa/static/js/main.7929c606.js",
     "static/media/Mountain.jpg": "/kosa/static/media/Mountain.26bc5f49a63e3e76cbe3.jpg",
     "static/media/Coast.jpg": "/kosa/static/media/Coast.facdd914f986476abee6.jpg",
     "static/media/star-empty.svg": "/kosa/static/media/star-empty.7b1cf41be9857723e46cc5ac9767477f.svg",
@@ -9,11 +9,11 @@
     "index.html": "/kosa/index.html",
     "static/media/arrow-right.svg": "/kosa/static/media/arrow-right.fcd8131c4741f9116bc0ec56cc449b13.svg",
     "static/media/arrow-left.svg": "/kosa/static/media/arrow-left.19918a1634b1441a25ae0b50e6b1f85b.svg",
-    "main.4948f18b.css.map": "/kosa/static/css/main.4948f18b.css.map",
-    "main.8aa9bc46.js.map": "/kosa/static/js/main.8aa9bc46.js.map"
+    "main.4c1271a6.css.map": "/kosa/static/css/main.4c1271a6.css.map",
+    "main.7929c606.js.map": "/kosa/static/js/main.7929c606.js.map"
   },
   "entrypoints": [
-    "static/css/main.4948f18b.css",
-    "static/js/main.8aa9bc46.js"
+    "static/css/main.4c1271a6.css",
+    "static/js/main.7929c606.js"
   ]
 }
