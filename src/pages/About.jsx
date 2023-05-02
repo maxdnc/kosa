@@ -20,7 +20,7 @@ const About = () => {
         alt={"Landscape of mountain"}
       />
       <section className="about-dropdown">
-        <Dropdown data={dropdown} boxOpen={[0]} />
+        <Dropdown data={dropdown} boxOpen={[-1]} />
       </section>
     </>
   );

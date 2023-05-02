@@ -22,8 +22,9 @@
   max-width: 46.68px;
 }
 
-.slideshow-arrowleft.noarrow,
-.slideshow-arrowright.noarrow {
+.slideshow-arrowleft.hidden,
+.slideshow-arrowright.hidden,
+.slideshow-number.hidden {
   display: none;
 }
 

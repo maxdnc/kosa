@@ -89,10 +89,3 @@
     margin: 0 auto;
   }
 }
-
-@media screen and (min-width: 1250px) {
-  .main-block {
-    width: 95%;
-    margin: 0 auto;
-  }
-}
