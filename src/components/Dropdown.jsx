@@ -1,12 +1,12 @@
 // import react
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 // import style
 import "./Dropdown.css";
 
-const Dropdown = ({ data }) => {
-  const [isActive, setIsActive] = useState([0]);
+const Dropdown = ({ data, boxOpen }) => {
+  const [isActive, setIsActive] = useState(boxOpen);
 
   const handleToggle = (index) => {
     const currentIndex = isActive.indexOf(index);
@@ -22,7 +22,7 @@ const Dropdown = ({ data }) => {
   };
 
   return (
-    <section className="dropdown">
+    <>
       {data.map((item, index) => {
         return (
           <div className="dropdown-item" key={index}>
@@ -59,17 +59,17 @@ const Dropdown = ({ data }) => {
                 </defs>
               </svg>
             </button>
-            <p
+            <div
               className={`dropdown-content ${
                 isActive.includes(index) ? "active" : ""
               }`}
             >
               {item.content}
-            </p>
+            </div>
           </div>
         );
       })}
-    </section>
+    </>
   );
 };
 

@@ -19,7 +19,9 @@ const About = () => {
         bannerSize={"banner-about"}
         alt={"Landscape of mountain"}
       />
-      <Dropdown data={dropdown} />
+      <section className="about-dropdown">
+        <Dropdown data={dropdown} boxOpen={[0]} />
+      </section>
     </>
   );
 };

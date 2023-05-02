@@ -1,6 +1,42 @@
 .banner-about {
-  background: black;
   height: 223px;
   overflow: hidden;
   border-radius: 10px;
+  margin-bottom: 1.375rem;
+  position: relative;
+}
+.banner-about::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: black;
+  z-index: 1;
+  opacity: 0.3;
+}
+
+.about-dropdown {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+@media screen and (min-width: 990px) {
+  .banner-about {
+    border-radius: 25px;
+  }
+
+  .banner-title {
+    font-size: 3rem;
+    left: 50%;
+    transform: translatey(-50%) translateX(-50%);
+    width: 100%;
+    text-align: center;
+  }
+  .about-dropdown {
+    max-width: 1023px;
+    margin: 0 auto;
+  }
 }

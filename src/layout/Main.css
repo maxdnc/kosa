@@ -1,8 +1,10 @@
 .main-block {
-  margin: 0 1.25rem;
+  width: 90%;
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  max-width: 1240px;
+  margin: 0 auto;
 }
 
 .main-header {
@@ -40,6 +42,7 @@
 /* footer */
 
 .main-footer {
+  margin-top: 3rem;
   background-color: black;
   display: flex;
   justify-content: center;
@@ -59,4 +62,37 @@
   color: white;
   font-weight: 500;
   font-size: 0.75rem;
+}
+
+@media screen and (min-width: 990px) {
+  .main-navlink {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+  }
+
+  .main-list {
+    gap: 3.5625rem;
+  }
+
+  .main-logo {
+    width: 100%;
+    max-width: 210px;
+    height: auto;
+  }
+  .main-footer-text {
+    color: white;
+    font-weight: 500;
+    font-size: 1.5rem;
+  }
+  .main-block {
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1250px) {
+  .main-block {
+    width: 95%;
+    margin: 0 auto;
+  }
 }

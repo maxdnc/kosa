@@ -1,7 +1,17 @@
+// react router
 import { useLoaderData } from "react-router-dom";
+
 // component
 
 import Dropdown from "../components/Dropdown";
+import Slideshow from "../components/Slideshow";
+import Tags from "../components/Tags";
+import Stars from "../components/Stars";
+import Host from "../components/Host";
+
+// style
+
+import "./Accodomation.css";
 
 const Accodomation = () => {
   const data = useLoaderData();
@@ -20,28 +30,25 @@ const Accodomation = () => {
 
   return (
     <div className="accodomation">
-      <div className="slide">
-        futur component slide
-        {data.pictures.map((item, index) => {
-          return <img key={index} src={item} alt="room's pictures" />;
-        })}
-      </div>
-      <h1>{data.title}</h1>
-      <h2>{data.location}</h2>
+      <Slideshow slides={data.pictures} />
 
-      <div className="button-tags">
-        futur component tags
-        {data.tags.map((item, index) => {
-          return <button key={index}>{item}</button>;
-        })}
-      </div>
-
-      <div className="stars-rate">
-        futur component stars
-        {data.rating}
+      <div className="accodomation-wrapper-flex-ls">
+        <div className="accodomation-wrapper-ls">
+          <div className="accodomation-wrapper-text">
+            <h1 className="accodomation-title">{data.title}</h1>
+            <h2 className="accodomation-location">{data.location}</h2>
+          </div>
+          <Tags tags={data.tags} />
+        </div>
+        <div className="accodomation-rating-host">
+          <Stars rating={data.rating} />
+          <Host host={data.host} />
+        </div>
       </div>
 
-      <Dropdown data={collapseData} />
+      <section className="accodomation-dropdown">
+        <Dropdown data={collapseData} boxOpen={[-1]} />
+      </section>
     </div>
   );
 };

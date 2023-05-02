@@ -1,14 +1,7 @@
-/* DropDown compenent */
-.dropdown {
-  display: flex;
-  flex-direction: column;
-  gap: 1.25rem;
-  margin-bottom: 3rem;
-}
-
 .dropdown-item {
   position: relative;
   margin-block: 1.25rem;
+  width: 100%;
 }
 
 .dropdown-content {
@@ -31,6 +24,7 @@
 .dropdown-title-button {
   display: inline-flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
   background-color: var(--primary);
   color: white;
@@ -47,4 +41,20 @@
 .dropdown-arrow.active {
   transform: rotate(180deg);
   transition: transform 0.2s ease-in-out;
+}
+
+@media screen and (min-width: 990px) {
+  .dropdown-title-button {
+    font-size: 1.125rem;
+    border-radius: 10px;
+    padding: 0.5rem 0.75rem 0.5rem 1.25rem;
+  }
+  .dropdown-content {
+    border-radius: 10px;
+    font-size: 1.125rem;
+  }
+
+  .dropdown-content.active {
+    padding: 3rem 1.25rem;
+  }
 }

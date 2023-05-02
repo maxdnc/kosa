@@ -1,0 +1,32 @@
+.host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10.5px;
+}
+
+.host-photo {
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+}
+
+.host-name {
+  text-align: right;
+  color: var(--primary);
+  font-weight: 500;
+  font-size: 0.75rem;
+  width: 58px;
+}
+
+@media screen and (min-width: 990px) {
+  .host-photo {
+    width: 64px;
+    height: 64px;
+  }
+
+  .host-name {
+    font-size: 1.125rem;
+    width: 85px;
+  }
+}

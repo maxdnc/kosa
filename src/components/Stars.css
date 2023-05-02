@@ -1,0 +1,21 @@
+.stars-rate {
+  display: flex;
+  gap: 6.6px;
+}
+
+.stars {
+  height: 13px;
+  width: auto;
+}
+
+@media screen and (min-width: 990px) {
+  .stars {
+    height: 24px;
+    width: auto;
+  }
+  .stars-rate {
+    align-self: flex-start;
+    gap: 10%;
+    margin-right: 3.5rem;
+  }
+}

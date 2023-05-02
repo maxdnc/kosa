@@ -26,3 +26,18 @@
   margin-block: 8rem;
   font-weight: 500;
 }
+
+@media screen and (min-width: 990px) {
+  .error-404 {
+    font-size: 18rem;
+  }
+
+  .error-text {
+    font-size: 2.25rem;
+    max-width: none;
+  }
+
+  .error-link {
+    font-size: 1.125rem;
+  }
+}
