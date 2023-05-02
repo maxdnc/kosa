@@ -11,13 +11,14 @@ const Stars = ({ rating }) => {
 
   for (let i = 1; i <= 5; i++) {
     const filled = i <= rating;
-    const isFilled = filled
-      ? stars.push(
-          <img className="stars" key={i} src={starFilled} alt="star-filled" />
-        )
-      : stars.push(
-          <img className="stars" key={i} src={starEmpty} alt="star-empty" />
-        );
+    stars.push(
+      <img
+        className="stars"
+        key={i}
+        src={filled ? starFilled : starEmpty}
+        alt={filled ? "star-filled" : "star-empty"}
+      />
+    );
   }
 
   return <div className="stars-rate">{stars}</div>;
