@@ -30,6 +30,7 @@ const router = createHashRouter([
         path: "/accodomation/:id",
         element: <Accodomation />,
         loader: loaderGalleryDetails,
+        errorElement: <Error />,
       },
       {
         path: "*",
