@@ -37,18 +37,18 @@ const Slideshow = ({ slides }) => {
         alt="room's pictures"
       />
       <img
-        className={`slideshow-arrowleft ${isOnlyOnePicture ? "hidden" : ""}`}
+        className={`slideshow-arrowleft ${isOnlyOnePicture ? "hidde" : ""}`}
         src={arrowLeft}
         alt="arrow left"
         onClick={goToPrevious}
       />
       <img
-        className={`slideshow-arrowright ${isOnlyOnePicture ? "hidden" : ""}`}
+        className={`slideshow-arrowright ${isOnlyOnePicture ? "hidde" : ""}`}
         src={arrowRight}
         alt="arrow right"
         onClick={goToNext}
       />
-      <p className={`slideshow-number ${isOnlyOnePicture ? "hidden" : ""}`}>
+      <p className={`slideshow-number ${isOnlyOnePicture ? "hidde" : ""}`}>
         {currentSlide + 1}/{totalSlides}
       </p>
     </div>
