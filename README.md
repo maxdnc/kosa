@@ -1,6 +1,6 @@
-Projet Kosa
+✨ Projet Kosa
 ---
 
-Using React / React-Router / css 
+🌱 Using React / React-Router / css 
 
-[Demo live link Kosa project](https://maxdnc.github.io/kosa/)
+👉 [Demo live link Kosa project](https://maxdnc.github.io/kosa/)
