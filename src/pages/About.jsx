@@ -9,7 +9,7 @@ import Mountain from "../assets/images/Mountain.jpg";
 import "./About.css";
 
 // import data
-import dropdown from "../assets/dropdown.json";
+import data from "../assets/dropdown.json";
 
 const About = () => {
   return (
@@ -20,7 +20,17 @@ const About = () => {
         alt={"Landscape of mountain"}
       />
       <section className="about-dropdown">
-        <Dropdown data={dropdown} boxOpen={[-1]} />
+        {data.map((item, index) => {
+          return (
+            <Dropdown
+              key={index}
+              index={index}
+              title={item.title}
+              content={item.content}
+              boxOpen={[-1]}
+            />
+          );
+        })}
       </section>
     </>
   );

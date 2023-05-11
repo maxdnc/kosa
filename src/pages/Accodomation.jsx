@@ -47,7 +47,17 @@ const Accodomation = () => {
       </div>
 
       <section className="accodomation-dropdown">
-        <Dropdown data={collapseData} boxOpen={[-1]} />
+        {collapseData.map((item, index) => {
+          return (
+            <Dropdown
+              key={index}
+              index={index}
+              title={item.title}
+              content={item.content}
+              boxOpen={[-1]}
+            />
+          );
+        })}
       </section>
     </div>
   );
