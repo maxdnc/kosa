@@ -9,28 +9,37 @@ import Error from "./pages/Error";
 // loader
 import { loaderGalleryDetails } from "./assets/loader";
 
+// router
+import { createHashRouter, RouterProvider } from "react-router-dom";
+
 //layout
 import Main from "./layout/Main";
 
-const routes = [
-  {
-    path: "/",
-    element: <Main />,
-    children: [
-      { index: true, element: <Acceuil /> },
-      { path: "/about", element: <About /> },
-      {
-        path: "/accodomation/:id",
-        element: <Accodomation />,
-        loader: loaderGalleryDetails,
-        errorElement: <Error />,
-      },
-      {
-        path: "*",
-        element: <Error />,
-      },
-    ],
-  },
-];
+function Routes() {
+  const routes = [
+    {
+      path: "/",
+      element: <Main />,
+      children: [
+        { index: true, element: <Acceuil /> },
+        { path: "/about", element: <About /> },
+        {
+          path: "/accodomation/:id",
+          element: <Accodomation />,
+          loader: loaderGalleryDetails,
+          errorElement: <Error />,
+        },
+        {
+          path: "*",
+          element: <Error />,
+        },
+      ],
+    },
+  ];
 
-export default routes;
+  const router = createHashRouter(routes);
+
+  return <RouterProvider router={router} />;
+}
+
+export default Routes;
